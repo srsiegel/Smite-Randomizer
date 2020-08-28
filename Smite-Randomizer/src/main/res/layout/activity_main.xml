@@ -8,17 +8,39 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.myfirstapp.MainActivity"
-    android:background="#16f3d6">
+    android:background="@color/black">
+
+    <CheckedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:background="#fefdfd"
+        android:elegantTextHeight="false"
+        android:textColor="#102de8"
+        android:text="Smite God Randomizer "
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Randomize"
+        android:id="@+id/button"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Pee Pee Poo Poo"
-        android:id="@+id/textView"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:background="#f90909"
-        android:elegantTextHeight="false"
-        android:textColor="#d6e810" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Include:"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="57dp"
+        android:textColor="#64d7f7" />
+
 </RelativeLayout>
